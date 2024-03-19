@@ -1,0 +1,221 @@
+/* Bratz Base */
+* {
+    margin: 0;
+    font-family:'Funkhouse', cursive;
+    text-align: center;
+}
+
+body{
+    background-image: url(/img/achtergrond.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.begin{
+    background-color: pink;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    left: 175px;
+    top: 175px;
+
+}
+#startButton {
+    padding: 10px 20px;
+    left: 200px;
+    position: fixed;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#startButton:hover {
+    background-color: #45a049;
+}
+main section:first-of-type {
+    display: flex;
+    width: 30rem;
+
+}
+
+
+section section:first-of-type {
+    width: 30rem;
+    border: hotpink solid 1rem;
+    margin: 0;
+    background-color: #e5c396;
+    position: relative;
+    height: 42rem
+}
+
+section section:nth-of-type(2) article {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+button {
+    aspect-ratio: 1;
+    width: 3rem;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: grey;
+}
+article:first-of-type button:first-of-type{
+    color: pink;
+    z-index: 99;
+}
+
+/* Eye-colors */
+svg:nth-of-type(3) {
+    z-index: 1;
+    width: 6rem;
+    translate: 0 0;
+    position: absolute;
+    translate: 13rem 24.5rem;
+}
+
+svg {
+    margin: 0;
+}
+
+svg:nth-of-type(1) {
+    position: absolute;
+    width: 15rem;
+    /* top: 15rem;
+    left: 9rem; */
+    translate: 9rem 15rem;
+}
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.cls-1,
+.cls-4 {
+    fill: none;
+}
+
+.cls-1,
+.cls-5,
+.cls-6 {
+    stroke-width: 3px;
+}
+
+.cls-7 {
+    clip-path: url(#clippath);
+}
+
+.cls-8,
+.cls-3 {
+    fill: #f978ad;
+}
+
+.cls-9,
+.cls-2,
+.cls-5 {
+    fill: #eed6b2;
+}
+
+.cls-2,
+.cls-3,
+.cls-4 {
+    stroke-width: 2px;
+}
+
+.cls-10 {
+    clip-path: url(#clippath-1);
+}
+
+/* .cls-11 {
+    clip-path: url(#clippath-4);
+}
+
+.cls-12 {
+    clip-path: url(#clippath-3);
+}
+
+.cls-13 {
+    clip-path: url(#clippath-2);
+} */
+
+.cls-14,
+.cls-15,
+.cls-16,
+.cls-17 {
+    stroke-width: 0px;
+}
+
+.cls-6 {
+    fill: #f7ef8d;
+}
+
+.cls-15 {
+    fill: #c63c7e;
+}
+
+.cls-16 {
+    fill: #e1bc8f;
+}
+
+.cls-17 {
+    fill: #e5c396;
+}
+
+.eyes-1,
+.eyes-2,
+.eyes-3,
+.eyes-4 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.eyes-2 {
+    fill: #eed6b2;
+}
+
+.eyes-2,
+.eyes-3,
+.eyes-4 {
+    stroke-width: 2px;
+}
+
+.eyes-3 {
+    fill: red;
+}
+
+.eyes-4 {
+    fill: #f7f3e8;
+}
+
+.eyes-5,
+.eyes-6,
+.eyes-7 {
+    stroke-width: 0px;
+}
+/*wenkbrauen*/
+.eyes-6 {
+    fill: #4f3205;
+}
+.eyes-7 {
+    fill: #fff;
+}
+
+.lips-1 {
+    fill: #e2a7a3;
+}
+.lips-2 {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}

@@ -1,221 +1,423 @@
 /* Bratz Base */
 * {
-    margin: 0;
-    font-family:'Funkhouse', cursive;
-    text-align: center;
+  margin: 0;
+  font-family: 'Funkhouse', cursive;
+  text-align: center;
 }
 
-body{
-    background-image: url(/img/achtergrond.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+h1{
+  color: rebeccapurple;
+  font-size: 1em;
+  width: 50%;
+  padding: 1em;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 6;
+  translate: 40% 780%;
+  height: fit-content;
+  background-color: white;
 }
 
-.begin{
-    background-color: pink;
-    position: fixed;
-    width: 200px;
-    height: 200px;
-    left: 175px;
-    top: 175px;
-
+.hair-outline-1 {
+  fill: #000;
+  stroke-width: 0px;
 }
+
+.hair-outline-2 {
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
+#hair-outline {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+}
+
+#hair {
+  position: absolute;
+  width: 100%;
+  fill: gold;
+  z-index: 3;
+  top: 9.2rem;
+}
+
+
+.face-1 {
+  fill: none;
+}
+
+.face-1,
+.face-2,
+.face-3,
+.face-4 {
+  stroke-width: 0px;
+}
+
+.face-5 {
+  mask: url(#mask);
+}
+
+.face-2 {
+  fill: #f7ef8d;
+}
+
+#face-part {
+  width: 19rem;
+  top: 7.9rem;
+  left: 4rem;
+  position: absolute;
+  z-index: 2;
+}
+
+#lip-item {
+  position: absolute;
+  top: 0;
+}
+
+.face-3 {
+  fill: #eed6b2;
+}
+
+.face-4,
+.face-6 {
+  fill: #000;
+}
+
+.face-7 {
+  filter: url(#luminosity-invert-noclip-2);
+}
+
+.face-8 {
+  filter: url(#luminosity-invert-noclip);
+}
+
+.face-9 {
+  mask: url(#mask-1);
+}
+
+.blurred-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/achtergrond.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+  /* Place the blurred background behind other elements */
+}
+
+.begin {
+  background-color: pink;
+  position: fixed;
+  width: 540px;
+  padding: 20px;
+  height: 200px;
+  text-align: center;
+  left: 440px;
+  top: 175px;
+  z-index: 1;
+}
+
 #startButton {
-    padding: 10px 20px;
-    left: 200px;
-    position: fixed;
-    font-size: 18px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  left: 680px;
+  top: 325px;
+  position: fixed;
+  font-size: 18px;
+  background-color: #ff00b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #startButton:hover {
-    background-color: #45a049;
+  background-color: #920066;
+  text-shadow: white;
 }
+
 main section:first-of-type {
-    display: flex;
-    width: 30rem;
-
+  display: flex;
+  width: 30rem;
 }
 
+section section:nth-of-type(2) {
+  width: 1rem;
+}
+
+section section:nth-of-type(2) button {
+  width: 4rem;
+}
 
 section section:first-of-type {
-    width: 30rem;
-    border: hotpink solid 1rem;
-    margin: 0;
-    background-color: #e5c396;
-    position: relative;
-    height: 42rem
+  width: 30rem;
+  border: hotpink solid 1rem;
+  margin: 0;
+  background-color: #e5c396;
+  position: relative;
+  height: 42rem;
+  width: 100%;
 }
 
 section section:nth-of-type(2) article {
-    display: flex;
-    padding: 1rem;
-    gap: 1rem;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
 }
 
 button {
-    aspect-ratio: 1;
-    width: 3rem;
-    padding: 10px;
-    border-radius: 100%;
-    background-color: grey;
-}
-article:first-of-type button:first-of-type{
-    color: pink;
-    z-index: 99;
+  aspect-ratio: 1;
+  width: 3rem;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: grey;
+
 }
 
-/* Eye-colors */
-svg:nth-of-type(3) {
-    z-index: 1;
-    width: 6rem;
-    translate: 0 0;
-    position: absolute;
-    translate: 13rem 24.5rem;
+article:first-of-type button:first-of-type {
+  color: pink;
+  z-index: 99;
 }
 
-svg {
-    margin: 0;
+#eyes-part {
+  position: absolute;
+  top: 15.5em;
+  left: 7.6rem;
+  z-index: 6;
+  width: 14rem;
 }
 
-svg:nth-of-type(1) {
-    position: absolute;
-    width: 15rem;
-    /* top: 15rem;
-    left: 9rem; */
-    translate: 9rem 15rem;
-}
-.cls-1,
-.cls-2,
-.cls-3,
-.cls-4,
-.cls-5,
-.cls-6 {
-    stroke: #000;
-    stroke-miterlimit: 10;
+
+.bust-1 {
+  clip-path: url(#clippath);
 }
 
-.cls-1,
-.cls-4 {
-    fill: none;
+.bust-2,
+.bust-3 {
+  fill: none;
 }
 
-.cls-1,
-.cls-5,
-.cls-6 {
-    stroke-width: 3px;
+.bust-2,
+.bust-4,
+.bust-5,
+.bust-6,
+.bust-7,
+.bust-8,
+.bust-9 {
+  stroke-width: 0px;
 }
 
-.cls-7 {
-    clip-path: url(#clippath);
+.bust-3 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
 }
 
-.cls-8,
-.cls-3 {
-    fill: #f978ad;
+.bust-4 {
+  fill: #eed6b2;
 }
 
-.cls-9,
-.cls-2,
-.cls-5 {
-    fill: #eed6b2;
+.bust-10 {
+  clip-path: url(#clippath-1);
 }
 
-.cls-2,
-.cls-3,
-.cls-4 {
-    stroke-width: 2px;
+.bust-11 {
+  clip-path: url(#clippath-3);
 }
 
-.cls-10 {
-    clip-path: url(#clippath-1);
+.bust-12 {
+  clip-path: url(#clippath-2);
 }
 
-/* .cls-11 {
-    clip-path: url(#clippath-4);
+#bust-item {
+  position: absolute;
+  z-index: 1;
+  top: 28.5rem;
+  left: 2.5rem;
+  width: 18rem;
 }
 
-.cls-12 {
-    clip-path: url(#clippath-3);
+.bust-5 {
+  fill: #e5c396;
 }
 
-.cls-13 {
-    clip-path: url(#clippath-2);
-} */
-
-.cls-14,
-.cls-15,
-.cls-16,
-.cls-17 {
-    stroke-width: 0px;
+.bust-6 {
+  fill: #000;
 }
 
-.cls-6 {
-    fill: #f7ef8d;
+.bust-7 {
+  fill: #f978ad;
 }
 
-.cls-15 {
-    fill: #c63c7e;
+.bust-8 {
+  fill: #c63c7e;
 }
 
-.cls-16 {
-    fill: #e1bc8f;
+.bust-9 {
+  fill: #e1bc8f;
 }
 
-.cls-17 {
-    fill: #e5c396;
-}
 
 .eyes-1,
 .eyes-2,
 .eyes-3,
 .eyes-4 {
-    stroke: #000;
-    stroke-miterlimit: 10;
+  stroke: #000;
+  stroke-miterlimit: 10;
 }
 
 .eyes-2 {
-    fill: #eed6b2;
+  fill: #eed6b2;
 }
 
 .eyes-2,
 .eyes-3,
 .eyes-4 {
-    stroke-width: 2px;
+  stroke-width: 2px;
 }
 
 .eyes-3 {
-    fill: red;
+  fill: red;
 }
 
 .eyes-4 {
-    fill: #f7f3e8;
+  fill: #f7f3e8;
 }
 
 .eyes-5,
 .eyes-6,
 .eyes-7 {
-    stroke-width: 0px;
+  stroke-width: 0px;
 }
+
 /*wenkbrauen*/
 .eyes-6 {
-    fill: #4f3205;
+  fill: #4f3205;
 }
+
 .eyes-7 {
-    fill: #fff;
+  fill: #fff;
 }
 
 .lips-1 {
-    fill: #e2a7a3;
+  fill: #e2a7a3;
 }
+
 .lips-2 {
-    fill: none;
-    stroke: #000;
-    stroke-miterlimit: 10;
-    stroke-width: 2px;
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+}
+
+#lips-item {
+  position: absolute;
+  top: 24rem;
+  left: 11.5rem;
+  z-index: 3;
+  width: 6rem;
+}
+
+.bubble {
+  background-color: #00bfb6;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  position: relative;
+  width: 200px;
+}
+
+.bubble:before {
+  /* Create the triangle using the border property */
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #00bfb6;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*eerste section knopjes*/
+section:nth-of-type(2) article:first-of-type button:first-of-type {
+  background-color: red;
+  width: 20px;
+}
+
+section:nth-of-type(2) article:first-of-type button:nth-of-type(2) {
+  background-color: green;
+
+}
+
+section:nth-of-type(2) article:first-of-type button:nth-of-type(3) {
+  background-color: lightskyblue;
+
+}
+
+section:nth-of-type(2) article:first-of-type button:nth-of-type(4) {
+  background-color: brown;
+
+}
+
+section:nth-of-type(2) article:first-of-type button:nth-of-type(5) {
+  background-color: pink;
+
+}
+
+/*tweede section knopjes*/
+section:nth-of-type(2) article:nth-of-type(2) button:first-of-type {
+  background-color: lightcoral;
+}
+
+section:nth-of-type(2) article:nth-of-type(2) button:nth-of-type(2) {
+  background-color: deeppink;
+
+}
+
+section:nth-of-type(2) article:nth-of-type(2) button:nth-of-type(3) {
+  background-color: darkred;
+
+}
+
+section:nth-of-type(2) article:nth-of-type(2) button:nth-of-type(4) {
+  background-color: saddlebrown;
+
+}
+
+section:nth-of-type(2) article:nth-of-type(2) button:nth-of-type(5) {
+  background-color: magenta;
+
+}
+
+/*laatste knopjes*/
+section:nth-of-type(2) article:nth-of-type(3) button:first-of-type {
+  background-color: gold;
+}
+
+section:nth-of-type(2) article:nth-of-type(3) button:nth-of-type(2) {
+  background-color: brown;
+
+}
+
+section:nth-of-type(2) article:nth-of-type(3) button:nth-of-type(3) {
+  background-color: darkred;
+
+}
+
+section:nth-of-type(2) article:nth-of-type(3) button:nth-of-type(4) {
+  background-color: deeppink;
+
+}
+
+section:nth-of-type(2) article:nth-of-type(3) button:nth-of-type(5) {
+  background-color: pink;
+
 }

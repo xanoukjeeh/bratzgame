@@ -4,8 +4,27 @@
   font-family: 'Funkhouse', cursive;
   text-align: center;
 }
+p{
+  font-size: 30px;
+  color: #920066;
+}
 
-h1{
+
+h1 {
+  color: rebeccapurple;
+  font-size: 1em;
+  width: 50%;
+  padding: 1em;
+  top: 50px;
+  left: 124px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 6;
+  height: fit-content;
+  background-color: white;
+}
+
+h2{
   color: rebeccapurple;
   font-size: 1em;
   width: 50%;
@@ -17,6 +36,13 @@ h1{
   height: fit-content;
   background-color: white;
 }
+
+h3 {
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 1.5px;
+}
+
 
 .hair-outline-1 {
   fill: #000;
@@ -104,12 +130,11 @@ h1{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/achtergrond.jpeg);
+  background-image: url(img/achtergrond.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(5px);
   z-index: -1;
-  /* Place the blurred background behind other elements */
 }
 
 .begin {
@@ -124,8 +149,8 @@ h1{
   z-index: 1;
 }
 
-#startButton {
-  padding: 10px 20px;
+#startbutton {
+  padding: 10px 25px;
   left: 680px;
   top: 325px;
   position: fixed;
@@ -138,7 +163,39 @@ h1{
   transition: background-color 0.3s;
 }
 
-#startButton:hover {
+#startbutton:hover {
+  background-color: #920066;
+  text-shadow: white;
+}
+
+#terugknop{
+  padding: 10px 20px;
+  left: 500px;
+  top: 35px;
+  position: fixed;
+  font-size: 18px;
+  background-color: #fc8ddb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#eindbutton{
+  padding: 10px 20px;
+  left: 685px;
+  top: 600px;
+  position: fixed;
+  font-size: 18px;
+  background-color: #ff00b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#eindbutton:hover{
   background-color: #920066;
   text-shadow: white;
 }
@@ -146,10 +203,19 @@ h1{
 main section:first-of-type {
   display: flex;
   width: 30rem;
+  margin-right: 20px;
 }
 
 section section:nth-of-type(2) {
   width: 1rem;
+}
+
+section section div {
+  padding-top: 20px;
+  height: 652px;
+  width: 500px;
+  border: rgb(53, 35, 44) solid 1rem;
+  background-color: rgb(178, 162, 176);
 }
 
 section section:nth-of-type(2) button {
@@ -168,8 +234,10 @@ section section:first-of-type {
 
 section section:nth-of-type(2) article {
   display: flex;
-  padding: 1rem;
+  padding-left: 3em;
+  padding-right: 3em;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 button {
@@ -325,31 +393,11 @@ article:first-of-type button:first-of-type {
   width: 6rem;
 }
 
-.bubble {
-  background-color: #00bfb6;
-  border-radius: 10px;
-  color: white;
-  padding: 10px;
-  position: relative;
-  width: 200px;
-}
-
-.bubble:before {
-  /* Create the triangle using the border property */
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #00bfb6;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 
 /*eerste section knopjes*/
 section:nth-of-type(2) article:first-of-type button:first-of-type {
   background-color: red;
-  width: 20px;
+
 }
 
 section:nth-of-type(2) article:first-of-type button:nth-of-type(2) {

@@ -10,7 +10,6 @@ function changingEyeColor(color) {
         eye.style.fill = color;
     });
 }
-
 function changingLipColor(color) {
     lipColor.forEach(lip => {
         lip.style.fill = color;
@@ -30,21 +29,25 @@ function updateCompliment() {
 
     let compliment = "";
 
-    // Controleer de kleur van de ogen en voeg een bijpassend compliment toe
-    if (currentEyeColor === "lightskyblue") {
-        compliment = "Je hebt prachtige blauwe ogen! ";
+    // eyes 
+    if (currentEyeColor === "red") {
+        compliment = "Deze kleur laat mijn ogen echt slayen!"
     } else if (currentEyeColor === "green") {
-        compliment = "Wow, jouw groene ogen zijn echt betoverend! ";
-    } else if (currentEyeColor === "brown") {
-        compliment = "Je hebt warme, mooie bruine ogen! ";
-
+        compliment = "Dit compliemnteert mijn huid echt!"
+    } else if (currentEyeColor === "lightskyblue"){
+        compliment = "Wat en slaying oogkleur!"
+    } else if (currentEyeColor === "brown"){
+        compliment = "Deze kleur is echt prachtig voor mij!"
+    } else if (currentEyeColor === "pink") {
+        compliment = "Dit vind ik de mooiste oogkleur"
     }
+    // lippen
     if (currentLipColor === "darkred") {
-        compliment = "Jouw rode lippen zijn zo levendig! "; // Completely replace previous text
+        compliment = "Jouw rode lippen zijn zo levendig! ";
     } else if (currentLipColor === "pink") {
-        compliment = "Roze lippen staan je echt fantastisch! "; // Completely replace previous text
+        compliment = "Roze lippen staan je echt fantastisch! ";
     } else if (currentLipColor === "purple") {
-        compliment = "Die paarse lippen maken je echt uniek! "; // Completely replace previous text
+        compliment = "Die paarse lippen maken je echt uniek! ";
     }
     if (currentHairColor === "gold") {
         compliment = "Jouw blonde haar straalt! ";
@@ -53,25 +56,21 @@ function updateCompliment() {
     } else if (currentHairColor === "black") {
         compliment = "Jouw zwarte haar is zo elegant! ";
     }
-
     return compliment.trim(); // Trim overtollige spaties aan het einde
 }
 
-
 function giveCompliment(compliment) {
-    // Zoek naar het bestaande h1-element binnen de sectie met id "content"
     const contentSection = document.getElementById("content");
-    const existingComplimentHeader = contentSection.querySelector("h1");
+    const existingComplimentHeader = contentSection.querySelector("h2");
 
-    // If existing h1 element is found, update its text content
+
     if (existingComplimentHeader) {
         existingComplimentHeader.textContent = ""; // Clear existing content
         existingComplimentHeader.textContent = compliment; // Set new compliment
     } else {
-        // If h1 element does not exist, create a new one and append it
-        const complimentHeader = document.createElement("h1");
+        const complimentHeader = document.createElement("h2");
         complimentHeader.textContent = compliment;
-        complimentHeader.id = "compliment"; // Set id for future reference
+        complimentHeader.id = "compliment";
         contentSection.appendChild(complimentHeader);
     }
 }

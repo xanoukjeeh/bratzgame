@@ -4,10 +4,15 @@
   font-family: Marker Felt;
   text-align: center;
 }
-p{
+p:first-of-type{
   font-size: 30px;
   font-weight: bold;
-  color: #920066;
+  color: white;
+}
+p:nth-of-type(2){
+  font-size: 10px;
+  font-weight: bold;
+  color: #ff00b3;
 }
 
 
@@ -184,7 +189,7 @@ h3 {
 }
 #klaarbutton{
   padding: 10px 20px;
-  left: 800px;
+  left: 960px;
   top: 650px;
   position: fixed;
   font-size: 18px;
@@ -218,8 +223,8 @@ section section div {
   position: relative;
   top: 52px;
   left: 270px;
-  border: rgb(53, 35, 44) solid 1rem;
-  background-color: rgb(178, 162, 176);
+  border: rgb(80, 0, 40) solid 1rem;
+  background-color: lightpink;
 }
 
 #image-container{

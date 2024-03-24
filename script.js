@@ -10,6 +10,7 @@ let play = document.getElementById("image-container");
     let audio = new Audio("bratz.mp3");
     audio.play()
 }
+
 play.addEventListener("click" , speelMuziek)
 https://www.youtube.com/watch?v=3xlws5og44U
 
@@ -40,27 +41,27 @@ function updateOpmerking() {
 
     // eyes 
     if (currentEyeColor === "red") {
-        opmerking = "Deze kleur laat mijn ogen echt slayen!"
+        opmerking = "Deze kleur laat mijn ogen echt slayen! "
     } else if (currentEyeColor === "green") {
-        opmerking = "Dit compliemnteert mijn huid echt!"
+        opmerking = "Dit complimenteert mijn huid echt! "
     } else if (currentEyeColor === "lightskyblue") {
-        opmerking = "Wat en slaying oogkleur!"
-    } else if (currentEyeColor === "brown") {
-        opmerking = "Deze kleur is echt prachtig voor mij!"
+        opmerking = "Wat een mooie hemelsblauwe oogkleur! "
+    } else if (currentEyeColor === "saddlebrown") {
+        opmerking = "Deze kleur is echt prachtig voor mij! "
     } else if (currentEyeColor === "pink") {
-        opmerking = "Dit vind ik de mooiste oogkleur"
+        opmerking = "Wat een schattige girly oogkleur :) "
     }
     // lippen
     if (currentLipColor === "lightcoral") {
-        opmerking = "Jouw rode lippen zijn zo levendig! ";
+        opmerking = "Jouw lichte lippen zijn zo schattig! ";
     } else if (currentLipColor === "deeppink") {
         opmerking = "Roze lippen staan je echt fantastisch! ";
     } else if (currentLipColor === "darkred") {
-        opmerking = "Die paarse lippen maken je echt uniek! ";
+        opmerking = "Die donker rode lippen maken je echt uniek! ";
     } else if (currentLipColor === "brown") {
-        opmerking = "Die paarse lippen maken je echt uniek! ";
+        opmerking = "Deze lippen geven de rest van de look een pop! ";
     } else if (currentLipColor === "magenta") {
-        opmerking = "Die paarse lippen maken je echt uniek! ";
+        opmerking = "Deze is wel heel fel he, maar u rock it! ";
     }
 
     // haar
@@ -69,9 +70,9 @@ function updateOpmerking() {
     } else if (currentHairColor === "saddlebrown") {
         opmerking = "Hey dit lijkt net op Anouk d'r haar :0";
     } else if (currentHairColor === "darkred") {
-        opmerking = "Jouw darkred haar is zo elegant! ";
+        opmerking = "Dit haar staat echt super goed bij je! ";
     } else if (currentHairColor === "chocolate") {
-        opmerking = "Je deeppink haar past perfect bij je! ";
+        opmerking = "Dit is een beetje oranje, heel schattig ";
     } else if (currentHairColor === "pink") {
         opmerking = "Je pink haar past perfect bij je! ";
     }

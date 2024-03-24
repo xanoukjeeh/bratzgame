@@ -10,9 +10,10 @@ let play = document.getElementById("image-container");
     let audio = new Audio("bratz.mp3");
     audio.play()
 }
-// dit heb ik van een Youtube tutorial
 play.addEventListener("click" , speelMuziek)
-https://www.youtube.com/watch?v=3xlws5og44U
+
+// https://www.youtube.com/watch?v=3xlws5og44U
+// dit heb ik van een Youtube tutorial
 
 // hulp gekregen van een student en beetje van chatgpt als het niet werkte hoe je dit moet linken, is gekoppeld aan svg in de html
 // prompt: waarom werkt deze code niet? cmd+A en kopieeren

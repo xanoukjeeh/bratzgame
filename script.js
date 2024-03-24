@@ -5,12 +5,19 @@ const hairColor = document.querySelectorAll(".hair-1");
 const hairButtons = document.querySelectorAll("article:nth-of-type(3) button");
 const lipButtons = document.querySelectorAll("article:nth-of-type(2) button");
 
-let play = document.getElementById("image-container");
+let play = document.getElementById("muziekje");
     function speelMuziek() {
-    let audio = new Audio("bratz.mp3");
-    audio.play()
-}
-play.addEventListener("click" , speelMuziek)
+        let audio = new Audio("bratz.mp3");
+        audio.play();
+    }
+    play.addEventListener("click", speelMuziek);
+
+// let play = document.getElementById("image-container");
+// function speelMuziek() {
+//   let audio = new Audio("bratz.mp3");
+//   audio.play();
+// }
+// play.addEventListener("click", speelMuziek);
 
 // https://www.youtube.com/watch?v=3xlws5og44U
 // dit heb ik van een Youtube tutorial
